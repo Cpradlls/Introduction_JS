@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB 1</title>
+</head>
+<body>
+    <script>
+        //exrecice1
+        let mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'];
+        //exercice2
+        console.log(mois[2]);
+        //exercice3
+        console.log(mois[5]);
+        //exercice4
+        console.log(mois[7]);
+        mois[7] = 'août';
+        console.log(mois[7]);
+        //exercice5
+        let Departement = [];
+        Departement[62] = 'Pas-De-Calais';
+        Departement[59] = 'Nord';
+        Departement[80] = 'Somme';
+        Departement[02] = 'Aisne';
+        Departement[60] = 'Oise';
+        console.log(Departement);
+        //exercice6
+        console.log(Departement[59]);
+        //exercice7
+        Departement[51] = 'Marne';
+        //exercice8
+        mois.forEach(element => { 
+            console.log(element);
+        });
+        //exercice9
+        Departement.forEach(element => {
+            console.log(element)
+        });
+        //exercice10
+        for (let key in Departement)
+        {
+            let element = Departement[key];
+            console.log('Le département ' + element + ' a le numéro ' + key);
+        }
+
+    </script>
+</body>
+</html>
